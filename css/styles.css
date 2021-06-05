@@ -1,17 +1,238 @@
-/*VARIOUS*/
-
-:root {
-  --background-main: #ffffff;
-  --main-text-color: #000000;
-}
-
-/*GLOBAL STYLES*/
-
 body {
   font-family: Roboto, Times, serif;
   font-weight: 500;
   font-style: normal;
-  background: rgb(77, 255, 211);
+  line-height: 1.3;
+}
+
+.container {
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #d9d9de;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 256px);
+  grid-gap: 32px;
+}
+
+.box {
+  display: block;
+  border-radius: 6px;
+}
+
+.box-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(255, 255, 255, 0) 48.44%,
+      rgba(255, 255, 255, 0) 76.04%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("../images/suggestions/winter-chuvyrkuisky-bay.jpg");
+}
+
+.box-2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(255, 255, 255, 0) 48.44%,
+      rgba(255, 255, 255, 0) 76.04%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("../images/suggestions/olkhon-winter-island.jpg");
+}
+
+.box-3 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(255, 255, 255, 0) 48.44%,
+      rgba(255, 255, 255, 0) 76.04%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("../images/suggestions/ivolginsky-datsan.jpg");
+}
+
+.box-4 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(255, 255, 255, 0) 48.44%,
+      rgba(255, 255, 255, 0) 76.04%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("../images/suggestions/ulan-ude.jpg");
+}
+
+.box-5 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(255, 255, 255, 0) 48.44%,
+      rgba(255, 255, 255, 0) 76.04%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("../images/suggestions/baikal-chalet.jpg");
+}
+
+.box-5 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(255, 255, 255, 0) 48.44%,
+      rgba(255, 255, 255, 0) 76.04%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("../images/suggestions/baikal-chalet.jpg");
+}
+
+.box-6 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(255, 255, 255, 0) 48.44%,
+      rgba(255, 255, 255, 0) 76.04%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("../images/suggestions/summer-chivyrkuisky-bay.jpg");
+}
+
+.box-7 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(255, 255, 255, 0) 48.44%,
+      rgba(255, 255, 255, 0) 76.04%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("../images/suggestions/white-carriage.jpg");
+}
+
+.box-8 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(255, 255, 255, 0) 48.44%,
+      rgba(255, 255, 255, 0) 76.04%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("../images/suggestions/baikal-harbor.jpg");
+}
+
+.box-9 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(255, 255, 255, 0) 48.44%,
+      rgba(255, 255, 255, 0) 76.04%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("../images/suggestions/sagaan-morin.jpg");
+}
+
+.box-10 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(255, 255, 255, 0) 48.44%,
+      rgba(255, 255, 255, 0) 76.04%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("../images/suggestions/olkhon-summer-island.jpg");
+}
+
+.box-11 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(255, 255, 255, 0) 48.44%,
+      rgba(255, 255, 255, 0) 76.04%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("../images/suggestions/baikal-riviera.jpg");
+}
+
+.box-12 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(255, 255, 255, 0) 48.44%,
+      rgba(255, 255, 255, 0) 76.04%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("../images/suggestions/сhivyrkuy-fairy-tale.jpg");
+}
+
+.box-13 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(255, 255, 255, 0) 48.44%,
+      rgba(255, 255, 255, 0) 76.04%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("../images/suggestions/autumn-baikal.jpg");
 }
 
 ul {
@@ -26,13 +247,13 @@ ul {
 }
 
 .suggestions {
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 76px;
 }
 
-.suggestions .wrap {
+.suggestions .container {
   max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 80px;
   border-bottom: 1px solid #d9d9de;
 }
@@ -43,7 +264,7 @@ ul {
   font-family: PT Serif;
   font-weight: 700;
   font-size: 30px;
-  line-height: 1.333;
+  line-height: 1.325;
   color: #000000;
 }
 
@@ -57,38 +278,80 @@ ul {
 } */
 
 .suggestions-item {
-  width: calc((100% - 64px) / 4);
+  width: 256px;
+  height: 256px;
   margin-bottom: 32px;
+  border-radius: 6px;
+
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(255, 255, 255, 0.7) 48.44%,
+    rgba(255, 255, 255, 0.7) 76.04%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
 }
 
 .suggestions-item:not(:last-child) {
   margin-right: 32px;
 }
 
+/* .suggestions-item:nth-child(4n) {
+  margin-right: 0;
+}
+.suggestions-item:nth-child(1) {
+  background-image: url("../images/suggestions/winter-chuvyrkuisky-bay.jpg");
+} */
+
+.suggestions-item:nth-child(2) {
+  background-image: url("../images/suggestions/olkhon-winter-island.jpg");
+}
+
+.suggestions-item:nth-child(3) {
+  background-image: url("../images/suggestions/ivolginsky-datsan.jpg");
+}
+
+.big-item {
+  width: 544px;
+  height: 544px;
+  margin-right: 0;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(255, 255, 255, 0.7) 48.44%,
+      rgba(255, 255, 255, 0.7) 76.04%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("../images/suggestions/ivolginsky-datsan.jpg");
+}
+
 .suggestions-links {
   text-decoration: none;
+  display: block;
+  height: 221px;
+  padding-top: 16px;
+  padding-right: 17px;
+  padding-bottom: 19px;
+  padding-left: 17px;
+}
+
+.suggestions-big-links {
 }
 
 .suggestions-links-title {
   font-size: 18px;
-  line-height: 1.278;
   color: #ffffff;
 }
 
 .suggestions-big-title {
   font-size: 24px;
-  line-height: 1.292;
+  line-height: 1.342;
   color: #ffffff;
 }
 
 .suggestions-text {
-  padding-left: 17px;
-
+  font-weight: 400;
   font-size: 16px;
-  line-height: 1.313;
   color: #ffffff;
-}
-
-.suggestions-img {
-  display: block;
 }
