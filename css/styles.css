@@ -39,8 +39,11 @@ ul {
 }
 
 .suggestions-links {
+  height: inherit;
+  display: flex;
+  flex-wrap: wrap;
+
   text-decoration: none;
-  display: block;
   height: 221px;
 
   padding-top: 16px;
@@ -56,12 +59,9 @@ ul {
 .suggestions-links-title {
   font-size: 18px;
   color: #ffffff;
-
-  justify-content: last baseline;
 }
 
 .suggestions-big-title {
-  padding-top: 27px;
   padding-left: 33px;
   padding-right: 33px;
   font-size: 24px;
@@ -70,10 +70,23 @@ ul {
 }
 
 .suggestions-text {
-  vertical-align: unset;
+  align-self: flex-end;
+
   font-weight: 400;
   font-size: 16px;
   color: #ffffff;
+}
+
+.box-3 .suggestions-text {
+  padding-left: 33px;
+}
+
+.box-3 .suggestions-big-title {
+  padding-top: 27px;
+}
+
+.box-13 .suggestions-big-title {
+  align-self: center;
 }
 
 .wrapper {
@@ -86,6 +99,7 @@ ul {
 .box {
   display: block;
   border-radius: 6px;
+  background-color: rgb(107, 107, 107);
 }
 
 .box-1 {
@@ -256,62 +270,4 @@ ul {
       rgba(0, 0, 0, 0.7) 100%
     ),
     url("../images/suggestions/autumn-baikal.jpg");
-}
-
-.suggestions-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* .suggestions-list:nth-child(4n) {
-  margin-right: auto;
-} */
-
-.suggestions-item {
-  width: 256px;
-  height: 256px;
-  margin-bottom: 32px;
-  border-radius: 6px;
-
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.7) 0%,
-    rgba(255, 255, 255, 0.7) 48.44%,
-    rgba(255, 255, 255, 0.7) 76.04%,
-    rgba(0, 0, 0, 0.7) 100%
-  );
-}
-
-.suggestions-item:not(:last-child) {
-  margin-right: 32px;
-}
-
-/* .suggestions-item:nth-child(4n) {
-  margin-right: 0;
-}
-.suggestions-item:nth-child(1) {
-  background-image: url("../images/suggestions/winter-chuvyrkuisky-bay.jpg");
-} */
-
-.suggestions-item:nth-child(2) {
-  background-image: url("../images/suggestions/olkhon-winter-island.jpg");
-}
-
-.suggestions-item:nth-child(3) {
-  background-image: url("../images/suggestions/ivolginsky-datsan.jpg");
-}
-
-.big-item {
-  width: 544px;
-  height: 544px;
-  margin-right: 0;
-
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.7) 0%,
-      rgba(255, 255, 255, 0.7) 48.44%,
-      rgba(255, 255, 255, 0.7) 76.04%,
-      rgba(0, 0, 0, 0.7) 100%
-    ),
-    url("../images/suggestions/ivolginsky-datsan.jpg");
 }
