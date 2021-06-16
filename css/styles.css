@@ -40,7 +40,6 @@ body {
 }
 
 .suggestions-links {
-  height: inherit;
   display: flex;
   flex-wrap: wrap;
 
