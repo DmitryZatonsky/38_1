@@ -13,6 +13,7 @@
   --second-brand-color: #3fa9f5;
   --form-background-color: #f5f5f7;
   --footer-background-color: #202020;
+  --section-border-color: #d9d9de;
 }
 
 body {
@@ -46,7 +47,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 80px;
-  border-bottom: 1px solid #d9d9de;
+  border-bottom: 1px solid var(--section-border-color);
 }
 
 .suggestions-title {
@@ -67,7 +68,7 @@ ul {
 }
 
 .suggestions-wrapper .suggestions-links {
-  width: inherit;
+  width: 256px;
   height: 256px;
 
   display: flex;
@@ -144,10 +145,6 @@ ul {
   font-weight: 400;
   font-size: 16px;
   color: var(--dark-theme-title-color);
-}
-
-.suggestions-grid-13 .suggestions-big-title {
-  align-self: center;
 }
 
 .suggestions-grid {
@@ -228,4 +225,8 @@ ul {
   grid-column: 4/5;
   grid-row: 4/5;
   text-align: center;
+}
+
+.suggestions-grid-13 .suggestions-big-title {
+  align-self: center;
 }
